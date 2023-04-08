@@ -3,6 +3,10 @@
 namespace Globomantics.Repositories;
 public class ConferenceRepository : IConferenceRepository
 {
+    //public ConferenceRepository(IHttpContextAccessor accessor)
+    //{
+    //    accessor.HttpContext.User;
+    //}
     private static List<ConferenceModel> conferences = new() {
           new ConferenceModel { 
               Id = 1, 

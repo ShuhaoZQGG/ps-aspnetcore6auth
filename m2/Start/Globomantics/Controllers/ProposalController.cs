@@ -4,6 +4,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Globomantics.Controllers;
+
+// The entire class is authorized
+//[Authorize]
+[Authorize]
+// The default authentication scheme will be applied if no explicit scheme is provided
+// [AllowAnonymous] allow the controller bypass the authorization
 public class ProposalController : Controller
 {
     private readonly IConferenceRepository conferenceRepo;
